@@ -1,0 +1,10 @@
+#inisiosesion{
+    width: 500px;
+    height: auto;
+}
+
+#inisiosesion img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
