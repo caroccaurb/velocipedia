@@ -11,48 +11,54 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="css/stylesss.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 
 <body>
-    <div class="header">
-        <div class="p-4 text-center d-flex">
+
+
+    <div class="container d-flex align-items-center justify-content-between" style="margin-top: 20px;">
+        <div class="p-3 border text-center flex-grow-1" style="margin-right: auto;">
             <h1>Bienvenido a Master Bikes</h1>
-            <div class="inisiosesion" style="margin-left: 10px;">
-                <a href="">
-                    <img src="img/inisesionnn.png" alt="Icono de inicio de sesión" style="width: 50px; height: auto;">
-                </a>
-            </div>
+        </div>
+        <div class="inisiosesion" style="margin-left: auto; margin-right: 20px;">
+            <a href="">
+                <img src="img/inisesionnn.png" alt="Icono de inicio de sesión" style="width: 50px; height: auto;">
+            </a>
         </div>
     </div>
 
 
-    <div class="container d-flex align-items-center" style="margin-top: 20px;">
+    <div class="container d-flex align-items-center" style="margin-top: 50px;">
         <div class=" m-auto">
-            <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                
                 <div class="collapse navbar-collapse justify-content-between">
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"> Solicitud a un técnico </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#"> Seguimiento del pedido </a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                                 Categorias
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="bicicleta.html">Bicicletas</a>
-                                <a class="dropdown-item" href="neumatico.html">Neumáticos</a>
-                                <a class="dropdown-item" href="frenos.html">Frenos</a>
+                                <a class="dropdown-item" href="#">Manillar</a>
+                                <a class="dropdown-item" href="#">Horiquillas</a>
+                                <a class="dropdown-item" href="#">Chasis</a>
+                                <a class="dropdown-item" href="#">Llantas</a>
+                                <a class="dropdown-item" href="#">Neumáticos</a>
+                                <a class="dropdown-item" href="#">Frenos llantas</a>
+                                <a class="dropdown-item" href="#">Frenos manillar</a>
+                                <a class="dropdown-item" href="#">Cadenas</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#"> Solicitud a un técnico </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#"> Seguimiento del pedido </a>
                         </li>
                     </ul>
                 </div>
@@ -60,57 +66,53 @@
         </div>
     </div>
 
-    <div class="container p-3 my-3 border text-dark text-center">
-        <div class="titulo">
-            <h1>Ofertas del día</h1>
+    <div class="container d-flex flex-column align-items-center" style="margin-top: 20px;">
+        <div class="p-3 border text-center">
+            <h4>OFERTAS DEL MES</h4>
         </div>
-        <div class="gallery">
-            <div class="content">
-                <img src="img/frenos3.jpg" id="imgn">
-                <p id="tmarca">SHIMANO</p>
-                <p>MANGUERA DE FRENO SHIMANO MODELO SM-BH90 NEGRO</p>
-                <h6 id="price-normal">$19.990</h6>
-                <h6 id="price-sale">$5.000</h6>
-                <a href="acceder.html">
-                    <button class="buy-1" id="btn">Comprar</button>
-                </a>
+        <div class="row mt-3">
+            <div class="col-md-6 mb-3">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <img class="card-img-top" src="img/llanta_1.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Llanta trasera aro 27</h4>
+                        <p class="card-text">$80.500</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="content">
-                <img src="img/bici3.jpg" id="imgn">
-                <p id="tmarca">GT</p>
-                <p>BICICLETA GT 700 M TRANSEO SPORT</p>
-                <h6 id="price-normal">$499.990</h6>
-                <h6 id="price-sale">$249.990</h6>
-                <a href="acceder.html">
-                    <button class="buy-2" id="btn">Comprar</button>
-                </a>
+            <div class="col-md-6 mb-3">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="img/disco-Shimano-180.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Disco de freno trasero</h4>
+                        <p class="card-text">$32.990</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="content">
-                <img src="img/frenos4.jpg" id="imgn">
-                <p id="tmarca">ALLIGATOR</p>
-                <p>PASTILLAS DE FRENO ALLIGATOR MODELO HK V X 037</p>
-                <h6 id="price-normal">$1.990</h6>
-                <h6 id="price-sale">$1.000</h6>
-                <a href="acceder.html">
-                    <button class="buy-3" id="btn">Comprar</button>
-                </a>
+            <div class="col-md-6 mb-3">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="img/cadena.jpeg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Cadena 1M</h4>
+                        <p class="card-text">$12.000.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="content">
-                <img src="img/neumatico1.jpg" id="imgn">
-                <p id="tmarca">MAXXIS</p>
-                <p>NEUMÁTICO MAXXIS DISSECTOR 29 X 2.40</p>
-                <h6 id="price-normal">$69.990</h6>
-                <h6 id="price-sale">$59.990</h6>
-                <a href="acceder.html">
-                    <button class="buy-4" id="btn">Comprar</button>
-                </a>
+            <div class="col-md-6 mb-3">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="img/chasis.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">chasis a¿de aluminio para mountainbikes</h4>
+                        <p class="card-text">$160.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
+    </div> 
 </body>
 
 </html>
