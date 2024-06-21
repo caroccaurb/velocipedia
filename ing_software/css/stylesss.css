@@ -92,6 +92,11 @@ p {
     text-align: center;
     padding-top: 0 8px;
 }
+#tmarca{
+    color: gray;
+    font-family: cursive;
+    font-size: small;
+}
 
 h6 {
     font-size: 26px;
