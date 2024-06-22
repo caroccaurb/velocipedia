@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicletas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesss.css">
+
+</head>
+
+<body>
+
+</body>
+    <div class="header">
+        <div class="p-4 text-center d-flex">
+            <a href="index.html" style="color: black;">
+                <h1>Master Bikes</h1>
+            </a>
+            <div class="inisiosesion" style="margin-left: 10px;">
+                <a href="index.html">
+                    <img src="img/inisesionnn.png" alt="Icono de inicio de sesión" style="width: 50px; height: auto;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Solicitud a un técnico</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 move-right"> <!-- Utiliza col-md-6 para un ancho mediano en dispositivos medianos y grandes -->
+                <form action="/action_page.php" id="form-solicitud-tecnico" method="get">
+                    <div class="form-group mb-3">
+                        <label for="run">Run:</label>
+                        <input type="number" class="form-control" id="run" placeholder="Enter run" name="run">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Enter nombre" name="nombre">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Enter apellido" name="apellido">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter apellido" name="apellido">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="numero-telefono">Número telefónico:</label>
+                        <input type="tel" class="form-control" id="numero-telefono" placeholder="Enter numero telefónico" name="numero-telefono">
+                    </div>
+                    <div class="form-group mb-5">
+                        <label for="email">Su petición acá:</label>
+                        <textarea class="form-control" id="email" placeholder="Enter email" name="email" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom btn-block">Enviar</button> <!-- btn-block para ocupar el ancho completo -->
+                </form>
+            </div>
+        </div>
+
+    <!--
+    <div class="container mt-3 text-center" >
+        <h2>Stacked form</h2>
+        <form action="/action_page.php" id="form-solicitud-tecnico" method="get">
+            <div class="mb-3 mt-3">
+                <label for="run">Run:</label>
+                <input type="number" class="form-control" id="run" placeholder="Enter run" name="email" style="width: 300px;">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Enter nombre" name="email" style="width: 300px;">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Enter apellido" name="email" style="width: 300px;">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="numero-telefono">Número telefónico:</label>
+                <input type="number" class="form-control" id="numero-telefono" placeholder="Enter numero telefónico" name="email" style="width: 300px;">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="email">Su petición acá:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="width: 300px;">
+            </div>
+            <div class="mb-3">
+                <label for="pwd">Password:</label>
+                <input type="passwo" class="form-control" id="pwd" placeholder="Enter password" name="pswd" style="width: 300px; padding: 20px; border-radius: 10px;">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    -->
+</html>

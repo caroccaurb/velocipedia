@@ -156,3 +156,31 @@ li {
 .buy-4 {
     background: #21a3a3;
 }
+
+
+#form-solicitud-tecnico{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.btn-custom {
+    background-color: #21a3a3;
+    border-color: #21a3a3;
+    color: white; /* Cambia el color del texto a blanco para mejor contraste */
+}
+
+.btn-custom:hover {
+    background-color: #1a8a8a; /* Cambia el color al pasar el mouse */
+    border-color: #1a8a8a; /* Cambia el color del borde al pasar el mouse */
+}
+
+.btn-custom:focus {
+    box-shadow: 0 0 0 0.2rem rgba(33, 163, 163, 0.5); /* Añade un efecto de sombra al enfocar */
+}
+
+.recuperar-contrasena {
+    text-align: left;
+    margin-top: 10px;
+}
