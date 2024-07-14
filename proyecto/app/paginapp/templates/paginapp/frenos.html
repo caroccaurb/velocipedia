@@ -1,0 +1,22 @@
+{%  extends 'pagina/base.html' %}
+
+{% block content %}
+
+    <div class="container p-3 my-3 border text-dark text-center">
+        <div class="gallery">
+            {% for frenos in frenos %}
+            <div class="content">
+                <img src="{{ frenos.image.url }}" id="imgn">
+                <p id="tmarca">{{ frenos.marca }}</p>
+                <p>{{ frenos.nombre }}</p>
+                <h6 id="price-normal">{{ frenos.precio }}</h6>
+                <h6 id="price-sale">{{ frenos.precio_oferta }}</h6>
+                <a href="{% url 'agregar' frenos.id %}">
+                <button class="buy-1" id="btn">Agregar al carrito</button>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,2 @@
+nombre usuario = admin
+password = 123

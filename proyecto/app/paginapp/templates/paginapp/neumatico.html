@@ -1,0 +1,23 @@
+{%  extends 'pagina/base.html' %}
+
+
+
+{% block content %}
+
+    <div class="container p-3 my-3 border text-dark text-center">
+        <div class="gallery">
+            {% for neumatico in neumaticos %}
+            <div class="content">
+                <img src="{{ neumatico.image.url }}" id="imgn">
+                <p id="tmarca">{{ neumatico.marca }}</p>
+                <p>{{ bicicleta.nombre }}</p>
+                <h6 id="price-normal">{{ neumatico.precio }}</h6>
+                <h6 id="price-sale">{{ neumatico.precio_oferta }}</h6>
+                <a href="{% url 'agregar' neumatico.id %}">
+                    <button class="buy-1" id="btn">Agregar al carrito</button>
+                </a>
+            {% endfor %}
+            </div>
+
+
+{% endblock %}

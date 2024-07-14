@@ -1,0 +1,26 @@
+{%  extends 'pagina/base.html' %}
+
+
+{% block content %}
+
+<div class="container p-3 my-3 border text-dark text-center">
+    
+    <div class="gallery">
+        {% for bicicleta in bicicletas %}
+        <div class="content">
+            <img src="{{ bicicleta.image.url }}" id="imgn">
+            <p id="tmarca">{{ bicicleta.marca }}</p>
+            <p>{{ bicicleta.nombre }}</p>
+            <h6 id="price-normal">{{ bicicleta.precio }}</h6>
+            <h6 id="price-sale">{{ bicicleta.precio_oferta }}</h6>
+            <a href="{% url 'agregar' bicicleta.id %}">
+            <button class="buy-1" id="btn">Agregar al carrito</button>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% endblock %}
